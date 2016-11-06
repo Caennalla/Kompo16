@@ -1,0 +1,6 @@
+FROM mhart/alpine-node
+WORKDIR /src
+ADD . .
+
+EXPOSE 3001
+CMD ["node", "server.js"]
